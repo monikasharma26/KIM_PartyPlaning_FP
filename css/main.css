@@ -51,3 +51,15 @@ header.home:before{
 *, ::after, ::before {
   box-sizing: border-box;
 }
+
+.navbar-expand-lg {
+    justify-content: flex-start;
+  }
+  
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+  article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+  }
