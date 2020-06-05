@@ -21,3 +21,33 @@ h6{
 *{
 	transition: 500ms ease;
 }
+
+
+header.home {
+	height: 970px;
+	box-shadow: none;
+}
+.sticky-nav nav {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+header{
+	background-image: url(../images/header-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 490px;
+	background-size: cover;
+	position: relative;
+	box-shadow: inset 0px -123px 44px -7px rgba(0,0,0,0.5);
+}
+header .pnk-btn {
+    border: 0;
+    line-height: 40px;
+}
+header.home:before{
+	content: none;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
