@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!----Title of website---->
+    <title>Party-Planning</title>
+    <link rel="shortcut icon" href="images/fav-logo.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript/model.js"></script>
+    <script src="javascript/login.js" charset="utf-8"></script>
+    <style >
+    .request_table tr>td {
+      padding: 1em;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <header class="contact bottom-space">
+        <nav class="navbar-expand-lg navbar-light navbar-default">
+<div class="container">
+  <div class="main-nav">
+<a class="navbar-brand" href="home.html"><h2>
+  <img src="images/logo.png">
+</h2></a>          
+      <div class="nav-bar">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mr-auto">
+         <li>           
+           <a href="home.html">Home <span class="sr-only">(current)</span></a>
+         </li>
+         <li>
+           <a href="about.html">About</a>
+         </li>
+         <li>
+           <a href="services.html">Services</a>
+         </li>
+         <li>
+           <a  href="gallery.html">Gallery</a>
+         </li>
+         <li>
+           <a href="contact.html" >Contact</a>
+         </li>
+         <li>
+          <a href="mylist.html" class="active"id="mylist">Bookings</a>
+        </li>
+         <li>
+           <a href="login.html" class="pnk-btn" id="login_b">Login Now!</a>
+         </li>
+         <li>
+          <a href="home.html" class="pnk-btn" id="logout_b" onclick="performLogout()">Logout</a>
+        </li>
+      </ul>
+      </div>
+      </div>
+    </div>
+      </div>
+  </nav>
+
+  <div class="header-content">
+    <h2>My List</h2>
+  </div>
+
+ <div class="scp-breadcrumb">
+      <ul class="breadcrumb">
+          <li><i class="fas fa-home"></i> <a href="home.html">Home</a></li> /
+          <li><a href="mylist.html">Bookings</a></li>
+      </ul>
+  </div>
+
+</header>
+<section class="bottom-space">
+<div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 ">
+
+  <div>
+    <div class="card-outer" >
+      <div id="headingOne">
+        
+            <h2 class="text-center">Party Bookings</h2>
+        
+      </div>
+  
+        
+  <div class="collapse show" style="text-align: center;" aria-labelledby="headingOne" data-parent="#accordion">
+    <div class="card-body-in">
+    <table class="table table-responsive table-striped booking-table request_table" id="bookingRequest">
+      <tr>
+      <th class="m-1 p-2">Booking Id</th>
+      <th class="m-1 p-2">First Name</th>
+      <th class="m-1 p-2">Last Name</th>
+      <th class="m-1 p-2">Email Address</th>
+      <th class="m-1 p-2">Mobile </th>
+      <th class="m-1 p-2">Details</th>
+     
+
+
+      </tr>
+
+    </table>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+    <div class="container">
+      <div class="main-footer">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <h6>Party Planners</h6>
+          <ul class="list-unstyled">
+            <li> <i class="fas fa-map-marker-alt"></i>
+              <a href="https://goo.gl/maps/ib6MYhVJ4SuaMzyz6">#265 Yorkland Blvd #400, North York, ON M2J 1S5</a>
+            </li>
+            <li> <i class="fas fa-phone"></i>
+             <a href="tel:+01 123 456 7899"> +01 657 456 7899 </a>
+            </li>
+            <li> <i class="fas fa-envelope"></i>
+              <a href="mailto:info@partyplanning.com"> info@gmail.com </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-2">
+          <h6>Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="about.html"> About </a></li>
+            <li><a href="services.html"> Service </a></li>
+            <li><a href="gallery.html"> Gallery </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <h6>Social links</h6>
+          <ul class="list-unstyled"> 
+            <li> <i class="fab fa-facebook-f"></i>
+              <a href="#">Facebook</a>
+            </li>
+            <li> <i class="fab fa-twitter"></i>
+             <a href="#"> Twitter </a>
+            </li>
+            <li> <i class="fab fa-google-plus-g"></i>
+              <a href="#"> Google Plus</a>
+            </li>
+            <li> <i class="fab fa-youtube"></i>
+              <a href="#"> Youtube</a>
+            </li>
+            <li> <i class="fab fa-instagram"></i>
+              <a href="#"> Instagram</a>
+            </li>
+          </ul>
+        </div>
+       
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <h6>Subscribe to our newsletter</h6>
+            <p></p>
+            <form>
+              <input type="text" name="" placeholder="Your email here">
+              <a href="#" class="pnk-btn">Subscribe</a>
+            </form>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+     
+     <div class="copy">
+      <div class="container">
+        <div class="copy-content">
+        <p> © Copyright 2020 Party Planning.All Right Reseved. <a href="https://www.premium-themes.co" target="_blank" class="hvr-efct">Premium Themes</a></p>
+        <ul class="list-unstyled">
+          <li><a href="#">Privacy policy</a></li> |
+          <li><a href="#">Terms and conditions</a></li> |
+          <li><a href="#">Sitemap </a></li>
+        </ul>
+      </div>
+      </div>
+      </div>
+ </footer>
+</body>
+    <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function () {
+           $(".menuToggle").click(function(){
+          $(this).toggleClass('cross-menu');
+            });
+           });
+</script>
+
+      <script type="text/javascript">
+        if ($(window).width() > 319) {
+            $(window).scroll(function() {   
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 1) {
+                $('body').addClass("sticky-nav")
+            } else {
+                $('body').removeClass("sticky-nav")
+            }
+        });
+            }
+        </script>
+         <script type="text/javascript">
+
+          function performLogout() {
+            localStorage.removeItem("currentuser");
+            window.href = "home.html";
+              alert("Logout");
+          }
+            var userId = localStorage.getItem("currentuser");
+            console.log(userId);
+            $(document).ready(function() {
+
+              getBookingRequests(userId).then(response=> {
+                bindBookingRequestToTable(response);
+                console.log(response);
+              });
+            });
+        
+        
+        
+            function bindBookingRequestToTable(bookingRequests) {
+              console.log(bookingRequests);
+              var bookingTable = document.getElementById("bookingRequest");
+              bookingRequests.forEach((bookingRequest, i) => {
+                let index = i+1;
+                let row = bookingTable.insertRow(index);
+                row.innerHTML = `<td>${index}</td><td>${bookingRequest.fname}</td><td>${bookingRequest.lname}</td><td>${bookingRequest.emailid}</td><td>${bookingRequest.mobile}</td><td>${bookingRequest.msgid}</td>`;
+
+              });
+        
+            }
+          
+             
+          </script>
+        
+
+
+</html>
