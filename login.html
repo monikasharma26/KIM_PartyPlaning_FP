@@ -24,7 +24,7 @@
 <div class="login-form">
     <div class="form-inner">
         <div class="logo-upper">
-            <a href="home.html">
+            <a href="index.html">
                 <img src="images/logo.png" alt="" />
             </a>
         </div>
@@ -181,7 +181,7 @@
 <script type="text/javascript">
  function performLogout() {
     localStorage.removeItem("currentuser");
-    window.href = "home.html";
+    window.href = "index.html";
     alert(" Logout ");
   }
   function login(){
@@ -193,7 +193,7 @@
             if(response) {
               processLogin(username);
               alert("Login successful");
-              window.location = "home.html";
+              window.location = "index.html";
             }
             else {
               // Login not successful TODO
@@ -215,8 +215,8 @@
         getUserId(username).then((response) => {
           if(response!= "not found") {
             localStorage.setItem("currentuser",response);
-            window.location = "home.html";
-            window.href = "home.html";
+            window.location = "index.html";
+            window.href = "index.html";
           }
           else {
   

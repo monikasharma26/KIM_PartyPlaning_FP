@@ -27,7 +27,7 @@
         <nav class="navbar-expand-lg navbar-light navbar-default">
 <div class="container">
   <div class="main-nav">
-<a class="navbar-brand" href="home.html"><h2>
+<a class="navbar-brand" href="index.html"><h2>
   <img src="images/logo.png">
 </h2></a>          
       <div class="nav-bar">
@@ -41,7 +41,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
        <ul class="navbar-nav mr-auto">
          <li>           
-           <a href="home.html">Home <span class="sr-only">(current)</span></a>
+           <a href="index.html">Home <span class="sr-only">(current)</span></a>
          </li>
          <li>
            <a href="about.html">About</a>
@@ -62,7 +62,7 @@
            <a href="login.html" class="pnk-btn" id="login_b">Login Now!</a>
          </li>
          <li>
-          <a href="home.html" class="pnk-btn" id="logout_b" onclick="performLogout()">Logout</a>
+          <a href="index.html" class="pnk-btn" id="logout_b" onclick="performLogout()">Logout</a>
         </li>
       </ul>
       </div>
@@ -77,7 +77,7 @@
 
  <div class="scp-breadcrumb">
       <ul class="breadcrumb">
-          <li><i class="fas fa-home"></i> <a href="home.html">Home</a></li> /
+          <li><i class="fas fa-home"></i> <a href="index.html">Home</a></li> /
           <li><a href="mylist.html">Bookings</a></li>
       </ul>
   </div>
@@ -117,6 +117,7 @@
   </div>
 </div>
 </div>
+
 </div>
 </div>
 </div>
@@ -188,7 +189,7 @@
      <div class="copy">
       <div class="container">
         <div class="copy-content">
-        <p> © Copyright 2020 Party Planning.All Right Reseved. <a href="https://www.premium-themes.co" target="_blank" class="hvr-efct">Premium Themes</a></p>
+        <p> © Copyright 2020 Party Planning.All Right Reseved.</p>
         <ul class="list-unstyled">
           <li><a href="#">Privacy policy</a></li> |
           <li><a href="#">Terms and conditions</a></li> |
@@ -226,7 +227,7 @@
 
           function performLogout() {
             localStorage.removeItem("currentuser");
-            window.href = "home.html";
+            window.href = "index.html";
               alert("Logout");
           }
             var userId = localStorage.getItem("currentuser");
@@ -237,6 +238,7 @@
                 bindBookingRequestToTable(response);
                 console.log(response);
               });
+             
             });
         
         
@@ -252,7 +254,7 @@
               });
         
             }
-          
+            
              
           </script>
         

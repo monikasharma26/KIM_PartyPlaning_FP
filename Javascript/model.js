@@ -9,13 +9,13 @@ class  User {
     }
   }
   class SendMessage {
-    constructor(fname,lname,email,mobile,msgid){
+    constructor(fname,lname,email,mobile,msgid,userId){
       this.fname = fname;
       this.lname = lname;
        this.email = email;
        this.mobile = mobile;
        this.msgid = msgid;
-      
+      this.userId= userId;
     }
   }
   class Booking {
