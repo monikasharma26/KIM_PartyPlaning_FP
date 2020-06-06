@@ -329,6 +329,48 @@
     //     enableUtc: false
     // });
 </script>
+<script type="text/javascript">
+    $(document).ready(function() {
+var slider = $("#lightSlider").lightSlider({
+gallery: true,
+  item: 1,
+  loop:true,
+  slideMargin: 0,
+  thumbItem: 5,
+responsive : [
+    {
+        breakpoint:991,
+        settings: {
+            item:1,
+            slideMove:1,
+            slideMargin:6,
+          }
+    },
+    {
+        breakpoint:641,
+        settings: {
+            item:1,
+            slideMove:1
+          }
+    }
+]
+}); 
+$(".arrow .right").click(function(){
+slider.goToNextSlide()
+});
+$(".arrow .left").click(function(){
+slider.goToPrevSlide()
+})
+
+});
+</script>
+
+
+
+
+
+
+
 
 
 
