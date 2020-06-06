@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!----Title of website---->
+    <title>Party-planning</title>
+    <link rel="shortcut icon" href="images/fav-logo.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/video-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="javascript/model.js"></script>
+</head>
+<body>
+  
+<div class="login-form">
+    <div class="form-inner">
+        <div class="logo-upper">
+            <a href="home.html">
+                <img src="images/logo.png" alt="" />
+            </a>
+        </div>
+        <form>
+            <h3>Login</h3>  
+            <div class="form-group">
+              <input type="text" name="" placeholder="Your User Name" id="username">
+            </div>
+           
+            <div class="form-group">
+              <input type="password" name="" placeholder="Password" id="password">
+            </div>
+           <div class="center-btn">
+            <button class="wht-btn" id="login_b"onclick="login()">Login</button>
+            <div class="cont-para">
+              <p><a href="forget-password.html">Forget Password?</a></p>
+            </div>
+        </div>
+          </form>
+          <div class="footer-bottom">
+              <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+          </div>
+    </div>
+</div>
+     
+ 
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+   <script src="js/lightslider.js"></script>
+  <script src="js/slick.js"></script>
+ 
+  <script type="text/javascript" src="js/video-popup.js"></script>
+
+<script >
+   $('.customslider').slick({
+    dots: false,
+   infinite: true,
+  slidesToScroll: 1,
+  centerMode: true,
+  centerPadding: '300px',
+  slidesToShow: 1,
+   arrows: true,
+   responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 1
+      }
+    }
+  ]
+ });
+   $('.customslider').slick('refresh');
+ 
+ 
+</script>
+
+
+  <script type="text/javascript">
+         jQuery(function(){
+             jQuery("a.bla-1").YouTubePopUp();
+         });
+  </script>
+
+  <script type="text/javascript">
+       $(document).ready(function(e) {
+        $("a.bla-1").click(function(event) {
+            $("body").addClass("active-video");
+            event.stopPropagation();
+        });
+
+        $(document).click(function(event){
+            if (!$(event.target).hasClass('active-video')) {
+                $("body").removeClass("active-video");
+            }
+        });
+    });
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+    var slider = $("#lightSlider").lightSlider({
+       gallery: true,
+          item: 1,
+          loop:false,
+          slideMargin: 0,
+          thumbItem: 5,
+       responsive : [
+            {
+                breakpoint:991,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:641,
+                settings: {
+                    item:1,
+                    slideMove:1
+                  }
+            }
+        ]
+    }); 
+    $(".arrow .right").click(function(){
+      slider.goToNextSlide()
+    });
+    $(".arrow .left").click(function(){
+      slider.goToPrevSlide()
+    })
+
+  });
+        </script>
+   
+<script type="text/javascript">
+   $(document).ready(function () {
+           $(".menuToggle").click(function(){
+          $(this).toggleClass('cross-menu');
+            });
+           });
+</script>
+
+
+      <script type="text/javascript">
+        if ($(window).width() > 319) {
+            $(window).scroll(function() {   
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 1) {
+                $('body').addClass("sticky-nav")
+            } else {
+                $('body').removeClass("sticky-nav")
+            }
+        });
+            }
+        </script>
+
+</body>
+</html>
+<script type="text/javascript">
+ function performLogout() {
+    localStorage.removeItem("currentuser");
+    window.href = "home.html";
+    alert(" Logout ");
+  }
+  function login(){
+        let  username = document.getElementById('username').value;
+        let password = document.getElementById('password').value;
+        checkLogin(username,password).then((response)=>{
+            console.log(response);
+  
+            if(response) {
+              processLogin(username);
+              alert("Login successful");
+              window.location = "home.html";
+            }
+            else {
+              // Login not successful TODO
+              alert("Please Enter Valid Username and Password");
+  
+            }
+  
+        });
+  
+      
+      }
+  
+  
+  
+      function processLogin(username) {
+        var btn_logn = document.getElementById('login_b');
+        btn_logn.style.display = "none";
+  
+        getUserId(username).then((response) => {
+          if(response!= "not found") {
+            localStorage.setItem("currentuser",response);
+            window.location = "home.html";
+            window.href = "home.html";
+          }
+          else {
+  
+          }
+        });
+      }
+  
+  </script>
+  
+  <script type="text/javascript" src="javascript/login.js">
+  
+  </script>
