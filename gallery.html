@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!----Title of website---->
+    <title>Party-Planning</title>
+    <link rel="shortcut icon" href="images/fav-logo.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,400&display=swap" rel="stylesheet">
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css" rel="stylesheet" type="text/css">
+<!-- <link rel="stylesheet" href="/bower_components/nanum-barun-gothic/nanumbarungothic.css" /> -->
+<link rel="stylesheet" href="css/example.css" />
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+    <header class="gallery bottom-space">
+          <nav class="navbar-expand-lg navbar-light navbar-default">
+  <div class="container">
+    <div class="main-nav">
+  <a class="navbar-brand" href="home.html"><h2>
+    <img src="images/logo.png">
+  </h2></a>          
+        <div class="nav-bar">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+           <li>           
+             <a href="home.html">Home <span class="sr-only">(current)</span></a>
+           </li>
+           <li>
+             <a href="about.html">About</a>
+           </li>
+           <li>
+             <a href="services.html">Services</a>
+           </li>
+           <li>
+             <a  href="gallery.html" class="active">Gallery</a>
+           </li>
+           <li>
+             <a href="contact.html">Contact</a>
+           </li>
+           <li>
+            <a href="mylist.html" id="mylist">Bookings</a>
+          </li>
+           <li>
+             <a href="login.html" class="pnk-btn" id="login_b">Login Now!</a>
+           </li>
+           <li>
+            <a href="login.html" class="pnk-btn" id="logout_b" onclick="performLogout()">Logout</a>
+          </li>
+        </ul>
+        </div>
+        </div>
+      </div>
+        </div>
+    </nav>
+
+    <div class="header-content">
+      <h2>Gallery</h2>
+    </div>
+
+   <div class="scp-breadcrumb">
+        <ul class="breadcrumb">
+            <li><i class="fas fa-home"></i> <a href="home.html">Home</a></li> /
+            <li><a href="services.html">Gallery</a></li>
+        </ul>
+    </div>
+
+    </header>
+
+
+
+
+    <div class="container bottom-space">
+<ul class="gallery-items">
+  <li class="gallery-item">
+    <div class="gallery-contents">
+      <div class="thumbnail gallery-trigger"><img src="images/1.jpg" alt="" /></div>
+      <div class="title"></div>
+    </div>
+    <div class="gallery-expander">
+      <div class="gallery-expander-contents">
+        <div class="row no-gutters">
+        <div class="col-sm-12 col-lg-6 d-flex">
+          <div class="image">
+              <div class="demo">
+                <ul class="lightSlider">
+                    <li data-thumb="images/silder-1.png">
+                        <img src="images/1.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-2.png">
+                        <img src="images/1.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-3.png">
+                         <img src="images/1.jpg" alt="" />
+                    </li>
+                </ul>
+
+                  <div class="arrow">
+                    <a class="left"><i class="fas fa-angle-left"></i></a>
+                    <a class="right"><i class="fas fa-angle-right"></i></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="contents">
+            <h2>Wedding Party</h2>
+            <p>I had the pleasure of working with Party Planners Events for my wedding and the experience was absolutely amazing! Among all our vendors, Zerlene was one of the easiest to work with.Zerlene was one of the easiest to work with. She helped us plan a detailed itinerary for the day and was always so patient with us. Especially in the week leading up to our wedding where I emailed her several times a day with new requests or changes to what we had finalized. She is so attentive to every single detail and kept the entire day moving effortlessly, from start to finish. When our ceremony finished a half hour early, she coordinated with the venue to open up the bar earlier so we didn’t have guests sitting around. Without her help we would not have had the best night of our lives. Thank you so much for your hard work, Zerlene. I have been recommending you to all my newly engaged friends! </p>
+            <a href="#" class="pnk-btn">Book Event</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </li>
+  <li class="gallery-item">
+    <div class="gallery-contents">
+      <div class="thumbnail gallery-trigger"><img src="images/2.jpg" alt="" /></div>
+      <div class="title"></div>
+    </div>
+    <div class="gallery-expander">
+      <div class="gallery-expander-contents">
+        <div class="row no-gutters">
+        <div class="col-sm-12 col-lg-6 d-flex">
+          <div class="image">
+            <div class="demo">
+                <ul class="lightSlider">
+                    <li data-thumb="images/silder-1.png">
+                        <img src="images/2.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-2.png">
+                        <img src="images/2.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-3.png">
+                         <img src="images/2.jpg" alt="" />
+                    </li>
+                </ul>
+
+                  <div class="arrow">
+                    <a class="left"><i class="fas fa-angle-left"></i></a>
+                    <a class="right"><i class="fas fa-angle-right"></i></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="contents">
+            <h2>Personal Party</h2>
+            <p>We understand that intimate gatherings need be carefully customized ensuring the best experience for you and your loved ones. Our planners collaborate with you to develop a clear vision of your event tailored specifically to your budget and needs. From staffing and AV equipment rental, to floorplan designs we ensure that no stone is left unturned. It’s our mission to fulfill your requests, and have the ability to provide your guests with special accommodations. No two events are the same, and your private party will be tailor fit to be unique as you and your guests.</p>
+            <a href="#" class="pnk-btn">Book Event</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </li>
+  <li class="gallery-item">
+   <div class="gallery-contents">
+      <div class="thumbnail gallery-trigger"><img src="images/3.jpg" alt="" /></div>
+      <div class="title"></div>
+    </div>
+    <div class="gallery-expander">
+      <div class="gallery-expander-contents">
+        <div class="row no-gutters">
+        <div class="col-sm-12 col-lg-6 d-flex">
+          <div class="image">
+            <div class="demo">
+                <ul class="lightSlider">
+                    <li data-thumb="images/silder-1.png">
+                        <img src="images/3.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-2.png">
+                        <img src="images/3.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-3.png">
+                         <img src="images/3.jpg" alt="" />
+                    </li>
+                </ul>
+
+                  <div class="arrow">
+                    <a class="left"><i class="fas fa-angle-left"></i></a>
+                    <a class="right"><i class="fas fa-angle-right"></i></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="contents">
+            <h2>Night Pub Parties</h2>
+           <p>Party Planners specializing in event management and production for intimate weddings, milestone birthdays, bridal showers, baby showers, product launches and more.
+            Our parties are uniquely customized and tailored to each of our clients needs making it a special experience for you and your guests as well as allowing the host to be a guest at their party.</p>
+            <a href="#" class="pnk-btn">Book Event</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </li>
+  <li class="gallery-item">
+    <div class="gallery-contents">
+      <div class="thumbnail gallery-trigger"><img src="images/4.jpg" alt="" /></div>
+      <div class="title"></div>
+    </div>
+    <div class="gallery-expander">
+      <div class="gallery-expander-contents">
+        <div class="row no-gutters">
+        <div class="col-sm-12 col-lg-6 d-flex">
+          <div class="image">
+            <div class="demo">
+                <ul class="lightSlider">
+                    <li data-thumb="images/silder-1.png">
+                        <img src="images/4.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-2.png">
+                        <img src="images/4.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-3.png">
+                         <img src="images/4.jpg" alt="" />
+                    </li>
+                </ul>
+
+                  <div class="arrow">
+                    <a class="left"><i class="fas fa-angle-left"></i></a>
+                    <a class="right"><i class="fas fa-angle-right"></i></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="contents">
+            <h2>Family Party</h2>
+            <p>Taking your employee engagement and business events to the next level, our corporate event planning division is comprised of exceptionally creative individuals with decades of experience. 
+              As a client you will benefit from our extensive talent pool, including our in-house rentals and corporate gifting divisions. Call us! We guarantee you an unsurpassed experience at of every stage of your corporate event planning.</p>
+            <a href="#" class="pnk-btn">Book Event</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </li>
+  <li class="gallery-item">
+    <div class="gallery-contents">
+      <div class="thumbnail gallery-trigger"><img src="images/5.jpg" alt="" /></div>
+      <div class="title"></div>
+    </div>
+    <div class="gallery-expander">
+      <div class="gallery-expander-contents">
+        <div class="row no-gutters">
+        <div class="col-sm-12 col-lg-6 d-flex">
+          <div class="image">
+            <div class="demo">
+                <ul class="lightSlider">
+                    <li data-thumb="images/silder-1.png">
+                        <img src="images/5.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-2.png">
+                        <img src="images/5.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-3.png">
+                         <img src="images/5.jpg" alt="" />
+                    </li>
+                </ul>
+
+                  <div class="arrow">
+                    <a class="left"><i class="fas fa-angle-left"></i></a>
+                    <a class="right"><i class="fas fa-angle-right"></i></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="contents">
+            <h2>Birthday Party</h2>
+            <p>We specialize and manage all aspects of event conceptualization, logistics, vendor management, budgeting and creative styling.
+            Party Planners is here to seamlessly create your visions and imaginations into a reality of memorable moments and unique experiences.       
+              Our team will make the planning process unique by personalizing each event to each client’s vision. With each little detail perfected to the finest touches, we guarantee to execute a flawless event and always incorporate an original design. 
+              </p>
+            <a href="#" class="pnk-btn">Book Event</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </li>
+  <li class="gallery-item">
+    <div class="gallery-contents">
+      <div class="thumbnail gallery-trigger"><img src="images/6.jpg" alt="" /></div>
+      <div class="title"></div>
+    </div>
+    <div class="gallery-expander">
+      <div class="gallery-expander-contents">
+        <div class="row no-gutters">
+        <div class="col-sm-12 col-lg-6 d-flex">
+          <div class="image">
+            <div class="demo">
+                <ul class="lightSlider">
+                    <li data-thumb="images/silder-1.png">
+                        <img src="images/6.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-2.png">
+                        <img src="images/6.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-3.png">
+                         <img src="images/6.jpg" alt="" />
+                    </li>
+                </ul>
+
+                  <div class="arrow">
+                    <a class="left"><i class="fas fa-angle-left"></i></a>
+                    <a class="right"><i class="fas fa-angle-right"></i></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="contents">
+            <h2>Outdoor Events</h2>
+            <p>We specialize and manage all aspects of event conceptualization, logistics, vendor management, budgeting and creative styling.
+              Party Planners is here to seamlessly create your visions and imaginations into a reality of memorable moments and unique experiences.       
+                Our team will make the planning process unique by personalizing each event to each client’s vision. With each little detail perfected to the finest touches, we guarantee to execute a flawless event and always incorporate an original design. 
+                </p>
+               <a href="#" class="pnk-btn">Book Event</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </li>
+  <li class="gallery-item">
+    <div class="gallery-contents">
+      <div class="thumbnail gallery-trigger"><img src="images/7.jpg" alt="" /></div>
+      <div class="title"></div>
+    </div>
+    <div class="gallery-expander">
+      <div class="gallery-expander-contents">
+        <div class="row no-gutters">
+        <div class="col-sm-12 col-lg-6 d-flex">
+          <div class="image">
+            <div class="demo">
+                <ul class="lightSlider">
+                    <li data-thumb="images/silder-1.png">
+                        <img src="images/7.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-2.png">
+                        <img src="images/7.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-3.png">
+                         <img src="images/7.jpg" alt="" />
+                    </li>
+                </ul>
+
+                  <div class="arrow">
+                    <a class="left"><i class="fas fa-angle-left"></i></a>
+                    <a class="right"><i class="fas fa-angle-right"></i></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="contents">
+            <h2>Private Party</h2>
+            <p>We specialize and manage all aspects of event conceptualization, logistics, vendor management, budgeting and creative styling.
+              Party Planners is here to seamlessly create your visions and imaginations into a reality of memorable moments and unique experiences.       
+                Our team will make the planning process unique by personalizing each event to each client’s vision. With each little detail perfected to the finest touches, we guarantee to execute a flawless event and always incorporate an original design. 
+                </p>
+            <a href="#" class="pnk-btn">Book Event</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </li>
+  <li class="gallery-item">
+    <div class="gallery-contents">
+      <div class="thumbnail gallery-trigger"><img src="images/8.jpg" alt="" /></div>
+      <div class="title"></div>
+    </div>
+    <div class="gallery-expander">
+      <div class="gallery-expander-contents">
+        <div class="row no-gutters">
+        <div class="col-sm-12 col-lg-6 d-flex">
+          <div class="image">
+            <div class="demo">
+                <ul class="lightSlider">
+                    <li data-thumb="images/silder-1.png">
+                        <img src="images/8.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-2.png">
+                        <img src="images/8.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-3.png">
+                         <img src="images/8.jpg" alt="" />
+                    </li>
+                </ul>
+
+                  <div class="arrow">
+                    <a class="left"><i class="fas fa-angle-left"></i></a>
+                    <a class="right"><i class="fas fa-angle-right"></i></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="contents">
+            <h2>Personal Party</h2>
+            <p>We specialize and manage all aspects of event conceptualization, logistics, vendor management, budgeting and creative styling.
+              Party Planners is here to seamlessly create your visions and imaginations into a reality of memorable moments and unique experiences.       
+                Our team will make the planning process unique by personalizing each event to each client’s vision. With each little detail perfected to the finest touches, we guarantee to execute a flawless event and always incorporate an original design. 
+                </p>
+           <a href="#" class="pnk-btn">Book Event</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </li>
+  <li class="gallery-item">
+    <div class="gallery-contents">
+      <div class="thumbnail gallery-trigger"><img src="images/9.jpg" alt="" /></div>
+      <div class="title"></div>
+    </div>
+    <div class="gallery-expander">
+      <div class="gallery-expander-contents">
+        <div class="row no-gutters">
+        <div class="col-sm-12 col-lg-6 d-flex">
+          <div class="image">
+            <div class="demo">
+                <ul class="lightSlider">
+                    <li data-thumb="images/silder-1.png">
+                        <img src="images/9.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-2.png">
+                        <img src="images/9.jpg" alt="" />
+                    </li>
+                    <li data-thumb="images/silder-3.png">
+                         <img src="images/9.jpg" alt="" />
+                    </li>
+                </ul>
+
+                  <div class="arrow">
+                    <a class="left"><i class="fas fa-angle-left"></i></a>
+                    <a class="right"><i class="fas fa-angle-right"></i></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="contents">
+            <h2>Corporate Party</h2>
+            <p>We specialize and manage all aspects of event conceptualization, logistics, vendor management, budgeting and creative styling.
+              Party Planners is here to seamlessly create your visions and imaginations into a reality of memorable moments and unique experiences.       
+                Our team will make the planning process unique by personalizing each event to each client’s vision. With each little detail perfected to the finest touches, we guarantee to execute a flawless event and always incorporate an original design. 
+                </p>
+             <a href="#" class="pnk-btn">Book Event</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </li>
+ 
+</ul>
+</div>
+
+
+   
+   <footer>
+    <div class="container">
+      <div class="main-footer">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <h6>Party Planners</h6>
+          <ul class="list-unstyled">
+            <li> <i class="fas fa-map-marker-alt"></i>
+              <a href="https://goo.gl/maps/ib6MYhVJ4SuaMzyz6">#265 Yorkland Blvd #400, North York, ON M2J 1S5</a>
+            </li>
+            <li> <i class="fas fa-phone"></i>
+             <a href="tel:+01 123 456 7899"> +01 657 456 7899 </a>
+            </li>
+            <li> <i class="fas fa-envelope"></i>
+              <a href="mailto:info@partyplanning.com"> info@gmail.com </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-2">
+          <h6>Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="about.html"> About </a></li>
+            <li><a href="services.html"> Service </a></li>
+            <li><a href="gallery.html"> Gallery </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <h6>Social links</h6>
+          <ul class="list-unstyled"> 
+            <li> <i class="fab fa-facebook-f"></i>
+              <a href="#">Facebook</a>
+            </li>
+            <li> <i class="fab fa-twitter"></i>
+             <a href="#"> Twitter </a>
+            </li>
+            <li> <i class="fab fa-google-plus-g"></i>
+              <a href="#"> Google Plus</a>
+            </li>
+            <li> <i class="fab fa-youtube"></i>
+              <a href="#"> Youtube</a>
+            </li>
+            <li> <i class="fab fa-instagram"></i>
+              <a href="#"> Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <h6>Subscribe to our newsletter</h6>
+          <p></p>
+          <form>
+            <input type="text" name="" placeholder="Your email here">
+            <a href="#" class="pnk-btn">Subscribe</a>
+          </form>
+        </div>
+        
+        </div>
+      </div>
+     
+    </div>
+     </footer>
+     <div class="copy">
+      <div class="container">
+        <div class="copy-content">
+        <p> © Copyright 2020 Party Planning.All Right Reseved.</p>
+        <ul class="list-unstyled">
+          <li><a href="#">Privacy policy</a></li> |
+          <li><a href="#">Terms and conditions</a></li> |
+          <li><a href="#">Sitemap </a></li>
+        </ul>
+      </div>
+      </div>
+      </div>
+ 
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/lightslider.js"></script>
+<!-- 
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  -->
+<script src="js/jquery.imagelistexpander.js"></script> 
+
+
+<script>
+(function(global, $){
+    $('.gallery-items').imagelistexpander({
+        prefix: "gallery-"
+    });
+})(this, jQuery)
+</script>
+   
+
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+    var slider = $(".lightSlider").lightSlider({
+       gallery: true,
+          item: 1,
+          loop:true,
+          slideMargin: 0,
+          thumbItem: 5,
+       responsive : [
+            {
+                breakpoint:991,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:641,
+                settings: {
+                    item:1,
+                    slideMove:1
+                  }
+            }
+        ]
+    }); 
+    $(".arrow .right").click(function(){
+      slider.goToNextSlide()
+    });
+    $(".arrow .left").click(function(){
+      slider.goToPrevSlide()
+    })
+
+  });
+        </script>
+
+<script type="text/javascript">
+   $(document).ready(function () {
+           $(".menuToggle").click(function(){
+          $(this).toggleClass('cross-menu');
+            });
+           });
+</script>
+<script type="text/javascript">
+        if ($(window).width() > 319) {
+            $(window).scroll(function() {   
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 1) {
+                $('body').addClass("sticky-nav")
+            } else {
+                $('body').removeClass("sticky-nav")
+            }
+        });
+            }
+        </script>
+ <script type="text/javascript" src="javascript/login.js">
+        </script>
+        <script type="text/javascript">
+          function performLogout() {
+            localStorage.removeItem("currentuser");
+            window.href = "home.html";
+            window.location = "home.html";
+            alert(" Logout ");
+          }
+        
+          </script>
+
+</body>
+</html>
