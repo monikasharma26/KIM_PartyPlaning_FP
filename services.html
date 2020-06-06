@@ -3,9 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/content.css">
+    <title>Party-Planning</title>
 </head>
 <body>
+      <!-- section for the headings of the webpage -->
+   <header class="home">
+    <nav class="navbar-expand-lg navbar-light navbar-default">
+<div class="container">
+<div class="main-nav">
+<a class="navbar-brand" href="index.html"><h2>
+<img src="images/logo.png">
+</h2></a>          
+  <div class="nav-bar">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li>           
+        <a href="home.html">Home </a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a class="active" href="services.html">Services <span class="sr-only">(current)</span></a>
+      </li>
+      <li>
+        <a  href="gallery.html">Gallery</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+      <li>
+        <a href="login.html" class="pnk-btn">Login Now!</a>
+      </li>
+   </ul>
+   </div>
+   </div>
+ </div>
+   </div>
+ </nav>
+ <div class="pink-wrap">
+    <img src="images/pnk-bg.png" class="img-responsive">
+  </div>
+  </header>
+  <div class="party-type bottom-space">
+    <div class="container">
+        <h1>Services</h1>
+
+ <!-- main content of the web page -->
+<main>
+  <section class="birthday-parties-box">
+      <div class="wrapper">
+        <div class="birthday-parties-outer">
+        <div class="image-birthday-parties">
+          <img src="images/party-1.png" alt="" />
+        </div>
+        <div class="content-birthday-parties">
+          <h2>BIRTHDAY PARTIES</h2>
+          <p>Six years of progressive experience as a Technology Analyst in the Enterprise Retail & Marketing, Insurance & Health, Banking & Payments domains.Good experience in grasping the functional requirements, developing the existing functionality enhancements, and delivering them bug free. </p>
+        </div>
+      </div>
+      </div>
+
+      <div class="">
+        <button class="servicebtn" onclick="openService(event, 'Birthday')" id="defaultOpen">VIEW PACKAGE</button>
+    </div>
+
+    <div id="Birthday" class="tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+
+</section>
+
+ <!-- Wedding section-->
+  
+ <section class="birthday-parties-box">
+  <div class="wrapper">
+    <div class="birthday-parties-outer">
+    <div class="image-birthday-parties">
+      <img src="images/party-4.png" alt="" />
+    </div>
+    <div class="content-birthday-parties">
+      <h2>WEDDING</h2>
+        <p>Six years of progressive experience as a Technology Analyst in the Enterprise Retail & Marketing, Insurance & Health, Banking & Payments domains.Good experience in grasping the functional requirements, developing the existing functionality enhancements, and delivering them bug free. </p>
+        
+      </div>
+    </div>
+    </div>
+
+    <div class="">
+      <button class="servicebtn" onclick="openService(event, 'Birthday')" id="defaultOpen">VIEW PACKAGE</button>
+  </div>
+
+  <div id="Wedding" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+
+</section>
+
+ <!-- Anniversary section-->
+  
+ <section class="birthday-parties-box">
+  <div class="wrapper">
+    <div class="birthday-parties-outer">
+      <div class="image-birthday-parties">
+        <img src="images/party-2.png" alt="" />
+      </div>
+      <div class="content-birthday-parties">
+        <h2>ANNIVERSARY</h2>
+        <p>Six years of progressive experience as a Technology Analyst in the Enterprise Retail & Marketing, Insurance & Health, Banking & Payments domains.Good experience in grasping the functional requirements, developing the existing functionality enhancements, and delivering them bug free. </p>
+        
+      </div>
+    </div>
+    </div>
+    
+    <div class="">
+      <button class="servicebtn" onclick="openService(event, 'Birthday')" id="defaultOpen">VIEW PACKAGE</button>
+  </div>
+
+  <div id="Anniversary" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+
+</section>
+
+ <!-- Others section-->
+  
+ <section class="birthday-parties-box">
+  <div class="wrapper">
+    <div class="birthday-parties-outer">
+      <div class="image-birthday-parties">
+        <img src="images/party-3.png" alt="" />
+      </div>
+      <div class="content-birthday-parties">
+        <h2>OTHERS</h2>
+        <p>Six years of progressive experience as a Technology Analyst in the Enterprise Retail & Marketing, Insurance & Health, Banking & Payments domains.Good experience in grasping the functional requirements, developing the existing functionality enhancements, and delivering them bug free. </p>
+        
+      </div>
+    </div>
+    </div>
+
+    <div class="">
+        <button class="servicebtn" onclick="openService(event, 'Birthday')" id="defaultOpen">VIEW PACKAGE</button>
+    </div>
+
+    <div id="Others" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+
+  </section>
+
+</main>
+
     
 </body>
 </html>

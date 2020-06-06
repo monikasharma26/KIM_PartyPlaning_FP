@@ -1,11 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!----Title of website---->
+    <title>Party-Planning</title>
+    <link rel="shortcut icon" href="images/fav-logo.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body>
+    <header class="about bottom-space">
+        <nav class="navbar-expand-lg navbar-light navbar-default">
+<div class="container">
+    <div class="main-nav">
+        <a class="navbar-brand" href="home.html"><h2>
+          <img src="images/logo.png">
+        </h2></a>  
+        <div class="nav-bar">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li>           
+            <a href="home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li>
+            <a href="about.html" class="active">About</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a  href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+           <a href="mylist.html" id="mylist">Bookings</a>
+         </li>
+         <li>
+            <a href="login.html" class="pnk-btn" id="login_b">Login Now!</a>
+          </li>
+          <li>
+           <a href="login.html" class="pnk-btn" id="logout_b" onclick="performLogout()">Logout</a>
+         </li>
+       </ul>
+       </div>
+       </div>
+     </div>
+       </div>
+   </nav>
+   <div class="header-content">
+    <h2>ABOUT US</h2>
+  </div>
+
+ <div class="scp-breadcrumb">
+      <ul class="breadcrumb">
+          <li><i class="fas fa-home"></i> <a href="home.html">Home</a></li> /
+          <li><a href="about.html">About Us</a></li>
+      </ul>
+  </div>
+
+  </header>
+  <section class="event-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h2>Who we are</h2>
+          <p>Party planning delievers a seamless end to end attendee experience, improve attribution reporting 
+              for our marketing efforts, increases attendee delight and steamlines the onsite process.
+          </p>
+          <p> An event planner structures an event, coordinate all of the moving parts, and makes sure everyone has a good time.
+               Also called convention and meeting planners, 
+               they do everything involved in making sure these events go smoothly, including choosing locations, hiring caterers, entertainment, and other vendors.</p>
+          
+          <a href="#" class="pnk-btn">Book Event</a>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="abt-img">
+              <img src="images/event-img.jpg">
+            </div>
+          </div>
+        </div> 
+        <div class="main-mission">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="mission-wrap">
+              <div class="mission-img">
+                <img src="images/mission-1.png">
+                <span>01</span>
+              </div>
+              <div class="mission-text">
+                <h5>Our Mission</h5>
+                <p> To make party planning the biggest hit by 2024.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="mission-wrap">
+             <div class="mission-img">
+               <img src="images/eye.png">
+               <span>02</span>
+             </div>
+             <div class="mission-text">
+               <h5>Our Vision</h5>
+               <p> Our vision is to provide ideal picture of event outcome to our clients
+                   and event reason for existence by providing good customer service and 
+                became highly demanded event company in next 10 years. </p>
+             </div>
+           </div>
+         </div>
+         <div class="col-sm-4">
+            <div class="mission-wrap">
+             <div class="mission-img">
+               <img src="images/award.png">
+               <span>03</span>
+             </div>
+             <div class="mission-text">
+               <h5>Awards</h5>
+               <p>Our awards in various categories are Global Eventex Awards in 40 categories, 
+                   American Business Award, Bizbash event Style award and many more. </p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     </div>
+   </section>
+   <section class="upcoming-wrap bottom-space">      
+    <div class="container">
+      <h2>Our Upcoming Events</h2>
+      <div class="row">
+        <div class="col-sm-9">
+         <div class="simply-countdown simply-countdown-one"></div>
+          <div class="news-block">
+            <h2><span>Subscribe</span> us for newsletter</h2>
+            <p>Subscribe to our newsletter to receive all the Latest news and updates.</p>
+            <div class="form clearfix">
+              <input type="text" name="" placeholder="Enter Your Email Address" required/>
+              <button class="pnk-btn">Subscribe Now</button>
+            </div>
+          </div> 
+        </div>
+        <div class="col-sm-3">
+          <div class="coming-img">
+            <img src="images/upcoming.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="abt-slider clearfix bottom-space">
+    <div class="container">
+      <h2>Our Team Members</h2>
+
+    <div class="demo">
+  <ul id="lightSlider">
+      <li data-thumb="images/silder-1.png">
+
+          <div class="team">
+        <h2>Monica Sharma <span>(IT Manager)</span> </h2>
+        <p>She is a well known figure for our company. She maintains IT AND Administrative department 
+            of the party planning.
+            Monica is motivated to help to others, from raising the performance bar among her team,
+             to bringing awareness and contribution to worthy causes. As Party planning grows, Monica gets 
+             to do more of what she loves - spending time with great people while applying her
+             extensive skills and acumens to deliver amazing event experiences.  </p>
+        <div class="social-icon">
+          <a href="#" class="face"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="twity"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#" class="tube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="team-img">
+        <img src="images/slider-img.png">
+      </div>
+    </li>
+    <li data-thumb="images/silder-2.png">
+         <div class="team">
+      <h2>Kritima kukreja <span>(Manager)</span> </h2>
+      <p>Being a well known web designer, she seeks the proper functioning of all the departments.
+        Kritima is a resourceful entrepreneur, unconventional strategist, multidisciplinary designer, 
+        and a sensible event organizer. Since the beginning of 2010,
+         Kritima has been on Wildcard's board of advisors.
+           </p>
+      <div class="social-icon">
+        <a href="#" class="face"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="twity"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="tube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="team-img">
+      <img src="images/slider-img-1.png">
+    </div>
+    </li>
+    <li data-thumb="images/silder-3.png">
+         <div class="team">
+      <h2>Ikroop Virk <span>(Marketing Manager)</span> </h2>
+      <p>Well known and highly qualified marketing manager of the company, Ikroop handles All
+          the marketing events and campaigns of the party planning.Her work also enables her to contribute
+           to great causes and give back to the community, while working alongside the best people in the industry.
+            Recognizing the amplifying effect of “loving what you do”, 
+          Ikroop practices this philosophy everyday regardless of the task at hand, and always with a 
+          shining smile. </p>
+      <div class="social-icon">
+        <a href="#" class="face"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="twity"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="tube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="team-img">
+      <img src="images/slider-img-2.png">
+    </div>
+    </li>
+
+   
+</ul>
+
+<div class="arrow">
+<a class="left"><img src="images/slider-left.png"></a>
+<a class="right"><img src="images/slider-right.png"></a>
+</div>
+</div>
+
+  </div>
+</section>
+
+<footer>
+    <div class="container">
+      <div class="main-footer">
+      <div class="row">
+       
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <h6>Logo here</h6>
+          <p>Party Planners</p>
+          <ul class="list-unstyled">
+            <li> <i class="fas fa-map-marker-alt"></i>
+              <a href="https://goo.gl/maps/ib6MYhVJ4SuaMzyz6">#265 Yorkland Blvd #400, North York, ON M2J 1S5</a>
+            </li>
+            <li> <i class="fas fa-phone"></i>
+             <a href="tel:+01 123 456 7899"> +01 657 456 7899 </a>
+            </li>
+            <li> <i class="fas fa-envelope"></i>
+              <a href="mailto:info@partyplanning.com"> info@gmail.com </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-2">
+            <h6>Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="about.html"> About </a></li>
+              <li><a href="services.html"> Service </a></li>
+              <li><a href="gallery.html"> Gallery </a></li>
+              <li><a href="contact.html"> Contact </a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <h6>Social links</h6>
+            <ul class="list-unstyled"> 
+              <li> <i class="fab fa-facebook-f"></i>
+                <a href="#">Facebook</a>
+              </li>
+              <li> <i class="fab fa-twitter"></i>
+               <a href="#"> Twitter </a>
+              </li>
+              <li> <i class="fab fa-google-plus-g"></i>
+                <a href="#"> Google Plus</a>
+              </li>
+              <li> <i class="fab fa-youtube"></i>
+                <a href="#"> Youtube</a>
+              </li>
+              <li> <i class="fab fa-instagram"></i>
+                <a href="#"> Instagram</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <h6>Subscribe to our newsletter</h6>
+            <p></p>
+            <form>
+              <input type="text" name="" placeholder="Your email here">
+              <a href="#" class="pnk-btn">Subscribe</a>
+            </form>
+          </div>
+          
+          </div>
+        </div>
+       
+      </div>
+       </footer>
+
+       <div class="copy">
+        <div class="container">
+          <div class="copy-content">
+          <p> © Copyright 2019 Party Planning.All Right Reseved. <a href="https://www.premium-themes.co" target="_blank" class="hvr-efct">Premium Themes</a></p>
+          <ul class="list-unstyled">
+            <li><a href="#">Privacy policy</a></li> |
+            <li><a href="#">Terms and conditions</a></li> |
+            <li><a href="#">Sitemap </a></li>
+          </ul>
+        </div>
+        </div>
+        </div>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+ <script src="js/lightslider.js"></script>
+
+   <script src="js/jquery.waypoints.min.js"></script>
+<script src="js/simplyCountdown.js"></script>
+<script src="js/main.js"></script>
+<script>
+    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    // jQuery example
+    // $('#simply-countdown-losange').simplyCountdown({
+    //     year: d.getFullYear(),
+    //     month: d.getMonth() + 1,
+    //     day: d.getDate(),
+    //     enableUtc: false
+    // });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+var slider = $("#lightSlider").lightSlider({
+gallery: true,
+  item: 1,
+  loop:true,
+  slideMargin: 0,
+  thumbItem: 5,
+responsive : [
+    {
+        breakpoint:991,
+        settings: {
+            item:1,
+            slideMove:1,
+            slideMargin:6,
+          }
+    },
+    {
+        breakpoint:641,
+        settings: {
+            item:1,
+            slideMove:1
+          }
+    }
+]
+}); 
+$(".arrow .right").click(function(){
+slider.goToNextSlide()
+});
+$(".arrow .left").click(function(){
+slider.goToPrevSlide()
+})
+
+});
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+            $(".menuToggle").click(function(){
+           $(this).toggleClass('cross-menu');
+             });
+            });
+ </script>
+ <script type="text/javascript">
+    if ($(window).width() > 319) {
+        $(window).scroll(function() {   
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 1) {
+            $('body').addClass("sticky-nav")
+        } else {
+            $('body').removeClass("sticky-nav")
+        }
+    });
+        }
+    </script>
+<script type="text/javascript" src="javascript/login.js">
+</script>
+<script type="text/javascript">
+  function performLogout() {
+    localStorage.removeItem("currentuser");
+    window.href = "home.html";
+    window.location = "home.html";
+      alert(" Logout ");
+  }
+
+
+  </script>
     
 </body>
 </html>

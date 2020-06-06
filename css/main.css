@@ -51,6 +51,10 @@ header.home:before{
 *, ::after, ::before {
   box-sizing: border-box;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ff4d942bcf69fead54eaa299c02bebf5c5b98423
 .navbar-expand-lg {
   justify-content: flex-start;
 }
@@ -62,6 +66,10 @@ img {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ff4d942bcf69fead54eaa299c02bebf5c5b98423
 .container {
  
   padding-right: 15px;
