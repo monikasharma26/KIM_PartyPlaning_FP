@@ -1,11 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!----Title of website---->
+    <title>Party-Planning</title>
+    <link rel="shortcut icon" href="images/fav-logo.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript/model.js"></script>
 </head>
 <body>
-    
+    <header class="contact bottom-space">
+          <nav class="navbar-expand-lg navbar-light navbar-default">
+  <div class="container">
+    <div class="main-nav">
+  <a class="navbar-brand" href="home.html"><h2>
+    <img src="images/logo.png">
+  </h2></a>          
+        <div class="nav-bar">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+           <li>           
+             <a href="home.html">Home <span class="sr-only">(current)</span></a>
+           </li>
+           <li>
+             <a href="about.html">About</a>
+           </li>
+           <li>
+             <a href="services.html">Services</a>
+           </li>
+           <li>
+             <a  href="gallery.html">Gallery</a>
+           </li>
+           <li>
+             <a href="contact.html" class="active">Contact</a>
+           </li>
+           <li>
+            <a href="mylist.html" id="mylist">Bookings</a>
+          </li>
+           <li>
+             <a href="login.html" class="pnk-btn" id="login_b">Login Now!</a>
+           </li>
+           <li>
+            <a href="login.html" class="pnk-btn" id="logout_b" onclick="performLogout()">Logout</a>
+          </li>
+        </ul>
+        </div>
+        </div>
+      </div>
+        </div>
+    </nav>
+
+    <div class="header-content">
+      <h2>Contact</h2>
+    </div>
+
+   <div class="scp-breadcrumb">
+        <ul class="breadcrumb">
+            <li><i class="fas fa-home"></i> <a href="home.html">Home</a></li> /
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    </header>
+
+<section class="bottom-space">
+  <div class="container">
+    <h2 class="text-center">Get in Touch</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="contact-wrap">
+            <div class="contact-icon">
+              <img src="images/location.png">
+            </div>
+            <div class="contact-text">
+              <h5>Location</h5>
+              <a href="https://goo.gl/maps/23mSGfDuow6VbK2q6" target="blank">#265 Yorkland Blvd #400<br>
+                North York, ON M2J1S5</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="contact-wrap">
+            <div class="contact-icon">
+              <img src="images/phone.png">
+            </div>
+            <div class="contact-text">
+              <h5>Phone</h5>
+              <a href="tel:+0 657 456 7899">+01 657 456 7899</a>
+               <a href="tel:+01 657 456 7800">+01 657 456 7800</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="contact-wrap">
+            <div class="contact-icon">
+              <img src="images/mail.png">
+            </div>
+            <div class="contact-text">
+              <h5>Email Address</h5>
+              <a href="mailto:info@partyplanning.com">info@partyplanning.com</a>
+               <a href="mailto:events_planning@partyplanning.com">events_planning@partyplanning.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="bottom-space contact-space">
+  <div class="container">
+    <div class="form-block clearfix">
+      <h2>The Best Event Planner</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" name="" placeholder="First name" required id="fname">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder=" Last Name" required id="lname">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Your Email Address" required id ="email">
+        </div>
+        
+        <div class="form-group">
+          <input type="text" name="" placeholder="Your Mobile Number" required id="mobile">
+        </div>
+        <div class="form-group textarea">
+          <textarea placeholder="Your Message" required id="msgid"></textarea>
+        </div>
+        <button class="wht-btn" onclick="sendMessage()">Send Message</button>
+        <div class="cont-para">
+          <p>If you Have Any Questions Schedule an Booking Call us on: <a href="tel:+01 657 456 7899"> +01 657 456 7899</a> <a href="tel:+01 123 456 7800"> +01 123 456 7800 </a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="map-block bottom-space">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.979009588183!2d-79.33806968470921!3d43.77329455267497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2d6fc6ca7f5d%3A0x2a12502c1cd1e815!2sLambton%20College!5e0!3m2!1sen!2sca!4v1591336952342!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</section>
+
+   <footer>
+    <div class="container">
+      <div class="main-footer">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4">
+         
+          <h6>Party Planners</h6>
+          <ul class="list-unstyled">
+            <li> <i class="fas fa-map-marker-alt"></i>
+              <a href="https://goo.gl/maps/ib6MYhVJ4SuaMzyz6">#265 Yorkland Blvd #400, North York, ON M2J 1S5</a>
+            </li>
+            <li> <i class="fas fa-phone"></i>
+             <a href="tel:+01 123 456 7899"> +01 657 456 7899 </a>
+            </li>
+            <li> <i class="fas fa-envelope"></i>
+              <a href="mailto:info@partyplanning.com"> info@gmail.com </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-2">
+          <h6>Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="about.html"> About </a></li>
+            <li><a href="services.html"> Service </a></li>
+            <li><a href="gallery.html"> Gallery </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <h6>Social links</h6>
+          <ul class="list-unstyled"> 
+            <li> <i class="fab fa-facebook-f"></i>
+              <a href="#">Facebook</a>
+            </li>
+            <li> <i class="fab fa-twitter"></i>
+             <a href="#"> Twitter </a>
+            </li>
+            <li> <i class="fab fa-google-plus-g"></i>
+              <a href="#"> Google Plus</a>
+            </li>
+            <li> <i class="fab fa-youtube"></i>
+              <a href="#"> Youtube</a>
+            </li>
+            <li> <i class="fab fa-instagram"></i>
+              <a href="#"> Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <h6>Timings</h6>
+          <h5><p class="mbr-text">Monday-Friday &nbsp;9am-7pm<br>Saturday 9am-5pm<br>Sunday 9am-3pm</p></h5>
+      </div>
+      
+        
+        </div>
+      </div>
+     
+    </div>
+     </footer>
+     <div class="copy">
+      <div class="container">
+        <div class="copy-content">
+        <p> © Copyright 2020 Party Planning.All Right Reseved. <a href="https://www.premium-themes.co" target="_blank" class="hvr-efct">Premium Themes</a></p>
+        <ul class="list-unstyled">
+          <li><a href="#">Privacy policy</a></li> |
+          <li><a href="#">Terms and conditions</a></li> |
+          <li><a href="#">Sitemap </a></li>
+        </ul>
+      </div>
+      </div>
+      </div>
+ 
+    <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+   
+
+<script type="text/javascript">
+   $(document).ready(function () {
+           $(".menuToggle").click(function(){
+          $(this).toggleClass('cross-menu');
+            });
+           });
+</script>
+
+      <script type="text/javascript">
+        if ($(window).width() > 319) {
+            $(window).scroll(function() {   
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 1) {
+                $('body').addClass("sticky-nav")
+            } else {
+                $('body').removeClass("sticky-nav")
+            }
+        });
+            }
+        </script>
+        <script type="text/javascript" src="javascript/login.js">
+        </script>
+        <script type="text/javascript">
+          function performLogout() {
+            localStorage.removeItem("currentuser");
+            window.href = "home.html";
+            window.location = "home.html";
+              alert(" Logout ");
+          }
+        function sendMessage(){
+        const userId = localStorage.getItem("currentuser");
+        let fname = document.getElementById('fname').value;
+        let lname = document.getElementById('lname').value;
+        let email = document.getElementById('email').value;
+        let mobile = document.getElementById('mobile').value;
+       let msgid = document.getElementById('msgid').value;
+      
+
+  var messagesend = new SendMessage(fname,lname,email,mobile,msgid);
+console.log(messagesend);
+addMessageRequestToDB(messagesend);
+alert("Message is Send. Will get back to you Soon ");
+
+}
+          </script>
+
 </body>
 </html>
