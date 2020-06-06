@@ -371,6 +371,19 @@ slider.goToPrevSlide()
              });
             });
  </script>
+ <script type="text/javascript">
+    if ($(window).width() > 319) {
+        $(window).scroll(function() {   
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 1) {
+            $('body').addClass("sticky-nav")
+        } else {
+            $('body').removeClass("sticky-nav")
+        }
+    });
+        }
+    </script>
 
 
 
