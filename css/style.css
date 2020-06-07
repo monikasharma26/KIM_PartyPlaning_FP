@@ -1557,3 +1557,24 @@ header.contact{
 .popup-book input::placeholder{
 	color: #fff;
 }
+
+
+.booking-table{
+	box-shadow: 0px 1px 13px 0px rgba(75, 121, 147, 0.3);
+    width: 100%;
+   display: table;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+.booking-table th{
+	border: 1px solid rgba(255,255,255,0.5);
+	background: #da2a7c;
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 18px;
+	text-align: left;
+}
+.booking-table td{
+	border: 1px solid rgba(0,0,0,0.1);
+	text-align: left !important;
+}
